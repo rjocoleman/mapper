@@ -1,0 +1,9 @@
+development: &development
+  adapter: postgresql
+  database: mapper
+
+test: &test
+  adapter: postgresql
+  database: mapper-test
+
+production: *development

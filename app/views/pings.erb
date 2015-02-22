@@ -1,0 +1,42 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>token</td>
+      <td>dateTime</td>
+      <td>latitude</td>
+      <td>longitude</td>
+      <td>speed</td>
+      <td>course</td>
+      <td>altitude</td>
+      <td>hdop</td>
+      <td>vdop</td>
+      <td>satellitesUsed</td>
+      <td>pdop</td>
+      <td>GSAModeTwo</td>
+      <td>batteryPercent</td>
+      <td>batteryVoltage</td>
+      <td>rssi</td>
+    </tr>
+  </thead>
+  <tbody>
+  <% @pings.each do |ping| %>
+    <tr>
+      <td><%= ping.token %></td>
+      <td><%= ping.dateTime %></td>
+      <td><%= ping.latitude %></td>
+      <td><%= ping.longitude %></td>
+      <td><%= ping.speed %></td>
+      <td><%= ping.course %></td>
+      <td><%= ping.altitude %></td>
+      <td><%= ping.hdop %></td>
+      <td><%= ping.vdop %></td>
+      <td><%= ping.satellitesUsed %></td>
+      <td><%= ping.pdop %></td>
+      <td><%= ping.GSAModeTwo %></td>
+      <td><%= ping.batteryPercent %></td>
+      <td><%= ping.batteryVoltage %></td>
+      <td><%= ping.rssi %></td>
+    </td>
+  <% end %>
+  </tbody>
+</table>
