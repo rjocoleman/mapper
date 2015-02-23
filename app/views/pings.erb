@@ -1,7 +1,9 @@
+<h1>Token: <%= @pings.first.token %></h1>
 <table class="table table-striped">
   <thead>
     <tr>
       <td>token</td>
+      <td>created_at</td>
       <td>dateTime</td>
       <td>latitude</td>
       <td>longitude</td>
@@ -22,6 +24,7 @@
   <% @pings.each do |ping| %>
     <tr>
       <td><%= ping.token %></td>
+      <td><%= ping.created_at %></td>
       <td><%= ping.dateTime %></td>
       <td><%= ping.latitude %></td>
       <td><%= ping.longitude %></td>

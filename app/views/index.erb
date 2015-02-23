@@ -1,0 +1,16 @@
+<h1>Below is a list of all tokens with data:</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Tokens</td>
+    </tr>
+  </thead>
+  <tbody>
+  <% @tokens.each do |token| %>
+    <tr>
+      <td><a href="/pings/<%= token %>"><%= token %></a></td>
+    </td>
+  <% end %>
+  </tbody>
+</table>
